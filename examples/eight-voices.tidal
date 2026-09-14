@@ -1,0 +1,18 @@
+-- Sound Code Cube: a compact, hand-written eight-voice example.
+-- Requires TidalCycles, SuperDirt, Dirt-Samples and native/synths.scd.
+-- Evaluate individual lines in a Tidal session. All selected layers start now;
+-- the application's two-cycle entrance schedule is not part of this file.
+
+setcps (128/60/4)
+
+d1 $ s "bd:18*4"                                      # gain 0.8
+d2 $ slow 2 $ midinote "45 ~ 45 48 ~ 52 48 ~" # s "sccbass"
+d3 $ s "~ sn:35 ~ sn:35"                              # gain 0.65
+d4 $ s "hh:3*8"                                      # gain 0.5
+d5 $ s "~ perc:4 ~ ~ perc:4 ~ ~ ~"                    # pan 0.7
+d6 $ slow 2 $ midinote "[57,60,64] ~ [57,60,64] ~" # s "sccpad"
+d7 $ slow 2 $ midinote "69 ~ 72 ~ 76 72 ~ 67"     # s "sccbell"
+d8 $ slow 2 $ midinote "81 ~"                    # s "scctexture"
+
+-- Evaluate this separately when you want to stop.
+-- hush

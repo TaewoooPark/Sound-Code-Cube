@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Eight voices, one space. A live-coded sound sculpture." />
+    <title>Sound Code Cube</title>
+    <link rel="icon" type="image/svg+xml" href="/cube.svg" />
+  </head>
+  <body>
+    <main id="app">
+      <nav class="controls" aria-label="재생 제어">
+        <button id="reset" type="button" aria-label="새로운 곡으로 다시 시작">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19.5 10a7.7 7.7 0 1 0-.7 6M19.5 4.5V10H14" /></svg>
+        </button>
+        <button id="transport" type="button" aria-label="재생" aria-pressed="false">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 5 10 7-10 7Z" /></svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5v14M15 5v14" /></svg>
+        </button>
+      </nav>
+      <section id="space" aria-label="드래그로 회전하는 사운드 파동 정육면체"></section>
+      <section id="terminal" aria-label="실시간 TidalCycles 코드" tabindex="0">
+        <div class="terminal-edge" aria-hidden="true"></div>
+        <pre id="score"><code id="code"></code><span class="caret" aria-hidden="true"></span></pre>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

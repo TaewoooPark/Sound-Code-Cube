@@ -1,0 +1,44 @@
+{
+  "name": "sound-code-cube",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "An audiovisual instrument mapping music into code, sound, and a three-dimensional pressure field.",
+  "repository": { "type": "git", "url": "git+https://github.com/TaewoooPark/Sound-Code-Cube.git" },
+  "homepage": "https://github.com/TaewoooPark/Sound-Code-Cube#readme",
+  "bugs": { "url": "https://github.com/TaewoooPark/Sound-Code-Cube/issues" },
+  "type": "module",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "npm run dev:browser",
+    "predev:browser": "tsx scripts/check-codex.ts --quiet",
+    "dev:browser": "concurrently -k -n bridge,web \"npm:server\" \"vite --host 127.0.0.1\"",
+    "dev:native": "node scripts/native-dev.mjs",
+    "setup:native": "node scripts/setup-native.mjs",
+    "setup:samples": "node scripts/setup-samples.mjs",
+    "doctor": "tsx scripts/check-codex.ts",
+    "login": "tsx scripts/login.ts",
+    "start": "tsx scripts/start.ts",
+    "start:native": "node scripts/native-dev.mjs --release",
+    "release:archive": "node scripts/release-archive.mjs",
+    "server": "tsx server/index.ts",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "tsx --test tests/*.test.ts src/audio/*.test.ts"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.2.6",
+    "express": "^5.1.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.0",
+    "@types/three": "^0.180.0",
+    "@playwright/test": "^1.55.0",
+    "concurrently": "^9.2.0",
+    "tsx": "^4.20.5",
+    "typescript": "~5.9.2",
+    "vite": "^7.1.5"
+  }
+}

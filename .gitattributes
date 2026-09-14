@@ -1,0 +1,10 @@
+* text=auto
+*.png binary
+*.webp binary
+*.jpg binary
+*.gif binary
+*.woff binary
+*.woff2 binary
+.github export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore
