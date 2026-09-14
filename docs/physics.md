@@ -1,6 +1,6 @@
 # Physics of the cube
 
-[README로 돌아가기](../README.md)
+[한국어 README로 돌아가기](../README.ko.md) · [English README](../README.md)
 
 Sound Code Cube의 공간은 음악의 성부를 여덟 파원에 대응시킨 **감쇠 스칼라 압력장의 시각화**입니다. 구현은 [WaveField](../src/visual/wave-field.ts), 입력과 시간 진행은 [WaveCube](../src/visual/WaveCube.ts), 부피 표현은 [PressureVolume](../src/visual/PressureVolume.ts)에 있습니다.
 

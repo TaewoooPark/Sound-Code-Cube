@@ -102,7 +102,7 @@ npm run start:native
 
 Open **[http://127.0.0.1:4318](http://127.0.0.1:4318)**. TidalCycles schedules the score, and SuperDirt with SuperCollider produces the sound. The browser drives the visualization using analysis signals from its own performance of the same score.
 
-On macOS, `setup:native` uses Homebrew to prepare GHC, Cabal, libffi, and SuperCollider, then installs a Tidal package environment, SuperDirt, Vowel, and Dirt-Samples in the project's `.runtime/` directory. The first download and compilation can take time. Later runs reuse the installed tools and samples. See the [local runtime guide (Korean)](docs/runtime.md) for environment variables and execution details, and the [server documentation (Korean)](server/README.md) for the API.
+On macOS, `setup:native` uses Homebrew to prepare GHC, Cabal, libffi, and SuperCollider, then installs a Tidal package environment, SuperDirt, Vowel, and Dirt-Samples in the project's `.runtime/` directory. The first download and compilation can take time. Later runs reuse the installed tools and samples. See the [local runtime guide (Korean)](docs/runtime.md) for environment variables and execution details, and the [server documentation](server/README.md) for the API.
 
 ### Distribution and accounts
 

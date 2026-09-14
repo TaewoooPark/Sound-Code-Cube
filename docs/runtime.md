@@ -1,6 +1,6 @@
 # Local runtime
 
-[설치 안내로 돌아가기](../README.md#설치-및-실행)
+[설치 안내로 돌아가기](../README.ko.md#설치-및-실행) · [English README](../README.md#installation)
 
 모든 공개 실행 경로에는 **사용자의 컴퓨터에 설치된 Codex CLI와 본인 ChatGPT OAuth 로그인**이 필요합니다. 진단과 로그인은 터미널에서 진행합니다.
 

@@ -1,6 +1,6 @@
 # Gallery and image provenance
 
-[README로 돌아가기](../README.md)
+[한국어 README로 돌아가기](../README.ko.md) · [English README](../README.md)
 
 README의 PNG는 이 프로젝트의 실제 Three.js/WebGL 렌더링을 캡처한 이미지입니다. 생성형 이미지 모델로 만든 큐브나 외부 작품의 사진을 사용하지 않았습니다. 공개 문서에는 개인 경로, 계정 화면, OAuth 정보가 들어간 캡처가 없습니다.
 
